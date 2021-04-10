@@ -13,8 +13,8 @@ RUN npm install
 ## Default port is 3000
 EXPOSE 3000 
 
-# Bundle app source
-COPY . .
+# # Bundle app source
+# COPY . .
 
 # # Start all packages
 # RUN npm start
