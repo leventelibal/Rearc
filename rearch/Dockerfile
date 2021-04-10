@@ -5,7 +5,7 @@ FROM node:14
 COPY package*.json ./src/
 
 ## Change the default folder 
-WORKDIR src/
+WORKDIR /usr/src/
 
 ## Install all packages
 RUN npm install 
