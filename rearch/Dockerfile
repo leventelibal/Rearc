@@ -5,7 +5,7 @@ FROM node:14
 COPY package*.json ./src/
 
 ## Change the default folder 
-WORKDIR /usr/src/
+WORKDIR src/
 
 ## Install all packages
 RUN npm install 
@@ -16,8 +16,8 @@ EXPOSE 3000
 # Bundle app source
 COPY . .
 
-# Start all packages
-RUN npm start
+# # Start all packages
+# RUN npm start
 
-## When contianer is stared python app.py 
+## When contianer is stared node:js 
 CMD ["node", "000.js"]
