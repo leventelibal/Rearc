@@ -18,8 +18,8 @@ COPY . .
 #sleep
 ENTRYPOINT ["sleep", "10"]
 
-# Start all packages
-RUN npm start
+# # Start all packages
+# RUN npm start
 
 ## When contianer is stared node:js 
 CMD ["node", "src/000.js"]
