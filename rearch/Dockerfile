@@ -17,4 +17,4 @@ EXPOSE 3000
 COPY . .
 
 ## When contianer is stared node:js 
-CMD ["/bin/sh", "-c","node", "src/000.js"]
+CMD ["/bin/sh", "-c", "node", "src/000.js"]
