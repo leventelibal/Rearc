@@ -20,4 +20,4 @@ COPY . .
 # RUN npm start
 
 ## When contianer is stared node:js 
-CMD ["node", "000.js"]
+CMD ["node", "src/000.js"]
