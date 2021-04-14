@@ -6,8 +6,8 @@ metadata:
   creationTimestamp: "2021-04-12T12:37:01Z"
   generation: 2
   labels:
-    run: rearch
-  name: rearch
+    run: rearc
+  name: rearc
   namespace: default
   resourceVersion: "13586632"
   selfLink: /apis/apps/v1/namespaces/default/deployments/rearch
@@ -18,7 +18,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      run: rearch
+      run: rearc
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -28,12 +28,12 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        run: rearch
+        run: rearc
     spec:
       containers:
       - image: leventelibal/rearch:v11
         imagePullPolicy: IfNotPresent
-        name: rearch
+        name: rearc
         env:
         - name: SECRET_WORD
           value: "TwelveFactor"

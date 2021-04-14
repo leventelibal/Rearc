@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rearch
+  name: rearc
 spec:
   selector:
-    run: rearch
+    run: rearc
   ports:
     - port: 3000
       targetPort: 3000
