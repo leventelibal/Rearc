@@ -6,5 +6,5 @@ spec:
   tls: 
   - secretName: tls-ingress-secret
   backend:
-    serviceName: rearc
-    servicePort: 3000
+    serviceName: rearch
+    servicePort: 443
