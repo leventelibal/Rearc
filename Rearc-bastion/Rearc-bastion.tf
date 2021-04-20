@@ -67,7 +67,6 @@ resource "null_resource" "local_generate_kube_config" {
 EOF
   }
 }
-
 resource "google_dns_record_set" "rearch" {
   depends_on = ["google_compute_instance.vm_instance"]
   managed_zone = "rearch"

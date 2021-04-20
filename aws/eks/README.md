@@ -1,9 +1,8 @@
 # EKS cluster deployment
-#fuchicorp/docs/eks
+#Rearc/docs/eks
 ### Author
-Created by @fsadykov
-Farkhod Sadykov
-fsadykov.com
+Created by @leventelibal
+Levent Elibal
 ## Before you begin
 1. Make sure you have terraform `11.14`
 2. Make sure you have AWS account and access key
@@ -12,7 +11,7 @@ fsadykov.com
 ## Deployment
 To be able to deploy the EKS cluster infrastructure. You will need to follow the below steps.
 ```
-git clone git@github.com:fuchicorp/cluster-infrastructure.git
+git clone https://github.com/leventelibal/Rearc.git
 cd cluster-infrastructure/aws/eks
 ``` 
 After you have everything download you will need to authenticate to AWS from environment variables. 
@@ -25,9 +24,9 @@ Please reference to following `tfvars` to be able to deploy EKS cluster
 ## For set-env.sh script configurations
 environment                     =   "dev"
 region                          =   "us-east-1"
-s3_bucket                       =   "fuchicorp"
+s3_bucket                       =   "Rearc"
 s3_folder_region                =   "us-east-1"
-s3_folder_project               =   "fuchicorp"
+s3_folder_project               =   "Rearc"
 s3_folder_type                  =   "eks"
 s3_tfstate_file                 =   "infrastructure.tfstate"
 ## After deployment of VPC you should have two security groups
@@ -57,7 +56,7 @@ terraform apply -var-file $DATAFILE -auto-approve
 ```
 To get access to cluster run follow command
 ```
-aws eks --region us-east-1 update-kubeconfig --name fuchicorp
+aws eks --region us-east-1 update-kubeconfig --name Rearc
 ```
 Example command 😊 
 ```

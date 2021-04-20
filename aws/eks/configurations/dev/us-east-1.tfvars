@@ -1,9 +1,9 @@
 ## For set-env.sh script configurations
 environment                     =   "dev"
 region                          =   "us-east-1"
-s3_bucket                       =	"fuchicorp"
+s3_bucket                       =	"rearch"
 s3_folder_region                =	"us-east-1"
-s3_folder_project               =   "fuchicorp"
+s3_folder_project               =   "rearch"
 s3_folder_type                  =   "eks"
 s3_tfstate_file                 =   "infrastructure.tfstate"
 
